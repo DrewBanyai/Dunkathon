@@ -131,7 +131,7 @@ const CreateRuleBlock = (container) => {
       lineHeight: "32px"
     },
   })
-  oneDunkEveryLabel.innerHTML = "One Dunk Every:"
+  oneDunkEveryLabel.innerHTML = "Dunk Costs:"
   ruleBlock.appendChild(oneDunkEveryLabel)
 
   const addDunkRequirement = (container, requirementString) => {
@@ -150,9 +150,9 @@ const CreateRuleBlock = (container) => {
     container.appendChild(newRequirement)
   }
 
-  addDunkRequirement(ruleBlock, "- 150 Bits/Cheers (collectively)")
-  addDunkRequirement(ruleBlock, "- 1 Subscription (includes resubs and gift subs)")
-  addDunkRequirement(ruleBlock, "- 1 Raid (of at least 3 people or more)")
+  addDunkRequirement(ruleBlock, "1 dunk for every 100 Bits/Cheers (collectively)")
+  addDunkRequirement(ruleBlock, "2 dunks for every 1 Subscription (includes resubs and gift subs)")
+  addDunkRequirement(ruleBlock, "1 dunk for every 1 Raid (of at least 3 people or more)")
 
   var helpCommandLabel = Container.create({
     id: "HelpCommandLabel",

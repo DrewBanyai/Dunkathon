@@ -36,6 +36,8 @@ const SetNextDunkTime = (timerSeconds) => {
     NextDunkTimerArea.setTimerValue(timerSeconds)
     NextDunkTimerArea.show()
   }
+
+  TwitchController.SendChatMessage(SETTINGS.TWITCH_DATA.CHANNEL, "# Dunk Timer Started: " + timerSeconds.toString() + " seconds")
 }
 
 const CreateTimerInterval = () => {

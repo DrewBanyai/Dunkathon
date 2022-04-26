@@ -38,8 +38,8 @@
 //  Motor Data
 int turnSpeed = 4;
 int moveDelay = 4;
-int movePoint1 = 0;
-int movePoint2 = 90;
+int movePoint1 = 10;
+int movePoint2 = 120;
 int topPointDelay = 800;
 int pos = 0;    // variable to store the servo position
 
@@ -123,7 +123,7 @@ void setup() {
   myservo.write(0);
   
   randomSeed(analogRead(0));
-  
+
   if (ConnectToEthernet()) { StoreLocalIP(); }
 }
 
